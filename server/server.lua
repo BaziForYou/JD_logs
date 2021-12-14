@@ -192,7 +192,7 @@ end)
 
 RegisterServerEvent('Prefech:playerShotWeapon')
 AddEventHandler('Prefech:playerShotWeapon', function(weapon)
-	if configFile['weaponLog'] then
+	if cfgFile['weaponLog'] then
 		ServerFunc.CreateLog({EmbedMessage = '**' .. GetPlayerName(source)  .. '** fired a `' .. weapon .. '`', player_id = source, channel = 'shooting'})
     end
 end)
